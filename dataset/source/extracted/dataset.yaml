@@ -1,0 +1,11 @@
+path: ../HomeObjects-3K_5class_143_per_class
+train: images/train
+val: images/val
+test: images/test
+nc: 5
+names:
+  0: door
+  1: lamp
+  2: photo frame
+  3: wardrobe
+  4: window

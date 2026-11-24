@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: image-captioning-vqa
+Version: 0.1.0
+Requires-Python: >=3.10
+Requires-Dist: Pillow>=10
+Requires-Dist: torch<3,>=2.1
+Requires-Dist: transformers<6,>=4.40
+Requires-Dist: gradio<7,>=4
+Requires-Dist: numpy<3,>=1.24
+Requires-Dist: sacrebleu<3,>=2.4
+Requires-Dist: rouge-score<1,>=0.1.2
+Requires-Dist: bert-score<1,>=0.3.13
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"
+Provides-Extra: speech
+Requires-Dist: faster-whisper<2,>=1.1; extra == "speech"
+Requires-Dist: edge-tts<8,>=7; extra == "speech"

@@ -1,0 +1,15 @@
+Pillow>=10
+torch<3,>=2.1
+transformers<6,>=4.40
+gradio<7,>=4
+numpy<3,>=1.24
+sacrebleu<3,>=2.4
+rouge-score<1,>=0.1.2
+bert-score<1,>=0.3.13
+
+[dev]
+pytest>=8
+
+[speech]
+faster-whisper<2,>=1.1
+edge-tts<8,>=7
