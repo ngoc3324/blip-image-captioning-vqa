@@ -1,84 +1,60 @@
-import tempfile
+"""Offline checks for the optional speech packaging contract."""
+
+import tomllib
 import unittest
-import wave
 from pathlib import Path
-from unittest.mock import patch
-import numpy as np
-
-from src.speech import SpeechService, decode_audio_compat, normalize_speech_audio
 
 
-class FakeSegment:
-    text = " xin chào "
+ROOT = Path(__file__).resolve().parents[1]
 
 
-class FakeInfo:
-    language = "vi"
+class SpeechPackagingTests(unittest.TestCase):
+    def test_speech_extra_contains_both_runtimes(self):
+        project = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))["project"]
+        speech = project["optional-dependencies"]["speech"]
+        self.assertTrue(any(dependency.startswith("sherpa-onnx>=") for dependency in speech))
+        self.assertTrue(any(dependency.startswith("sherpa-onnx-core>=") for dependency in speech))
+        self.assertTrue(any(dependency.startswith("piper-tts") for dependency in speech))
 
+    def test_transcription_defaults_to_vietnamese(self):
+        import inspect
+        from src.speech import SpeechService
+        self.assertEqual(inspect.signature(SpeechService.transcribe).parameters["language"].default, "vi")
 
-class FakeWhisper:
-    def __init__(self):
-        self.kwargs = None
+    def test_gipformer_rejects_non_vietnamese_stt(self):
+        from src.speech import transcribe_audio
+        with self.assertRaisesRegex(ValueError, "recognizes Vietnamese only"):
+            transcribe_audio(b"audio", "en")
 
-    def transcribe(self, *_args, **_kwargs):
-        self.kwargs = _kwargs
-        return iter([FakeSegment()]), FakeInfo()
+    def test_pyav_resamples_real_wav(self):
+        import wave
+        import numpy as np
+        from src.speech import _decode_audio_compat
 
-
-class SpeechTests(unittest.TestCase):
-    def test_transcription_contract(self):
-        service = SpeechService()
-        model = FakeWhisper()
-        samples = np.sin(np.linspace(0, 20, 16000)).astype(np.float32) * 0.05
-        with tempfile.NamedTemporaryFile(suffix=".wav") as audio:
-            with patch("src.speech._whisper_model", return_value=model), patch(
-                "src.speech.decode_audio_compat", return_value=samples
-            ):
-                result = service.transcribe(audio.name, "auto")
-        self.assertEqual(result.text, "xin chào")
-        self.assertEqual(result.language, "vi")
-        self.assertEqual(result.model_size, "large-v3")
-        self.assertFalse(model.kwargs["vad_filter"])
-        self.assertEqual(model.kwargs["beam_size"], 8)
-        service.audio.cleanup()
-
-    def test_cleanup_replaces_temporary_store(self):
-        service = SpeechService()
-        old_directory = service.audio.directory
-        Path(service.audio.new_path(".mp3")).write_bytes(b"audio")
-        service.cleanup()
-        self.assertFalse(old_directory.exists())
-        self.assertTrue(service.audio.directory.exists())
-        service.audio.cleanup()
-
-    def test_pyav_19_metadata_errors_compatibility(self):
+        path = ROOT / "tests" / "speech-compatibility.wav"
+        samples = (np.sin(np.linspace(0, 40, 3200)) * 8000).astype("<i2")
         try:
-            import av  # noqa: F401
-        except ImportError:
-            self.skipTest("speech extra is not installed")
-        with tempfile.TemporaryDirectory() as directory:
-            path = Path(directory) / "silence.wav"
-            with wave.open(str(path), "wb") as stream:
-                stream.setnchannels(1)
-                stream.setsampwidth(2)
-                stream.setframerate(16000)
-                stream.writeframes(b"\x00\x00" * 1600)
-            audio = decode_audio_compat(path)
-        self.assertEqual(audio.dtype.name, "float32")
-        self.assertEqual(len(audio), 1600)
+            with wave.open(str(path), "wb") as wav:
+                wav.setnchannels(1)
+                wav.setsampwidth(2)
+                wav.setframerate(16000)
+                wav.writeframes(samples.tobytes())
+            decoded = _decode_audio_compat(path)
+            self.assertEqual(decoded.dtype, np.float32)
+            self.assertEqual(len(decoded), 3200)
+            self.assertGreater(float(np.max(np.abs(decoded))), 0.1)
+        finally:
+            path.unlink(missing_ok=True)
 
-    def test_quiet_speech_is_normalized(self):
-        samples = np.sin(np.linspace(0, 20, 1600)).astype(np.float32) * 0.02
-        normalized = normalize_speech_audio(samples)
-        self.assertGreater(float(np.max(np.abs(normalized))), 0.05)
+    def test_documented_model_selection(self):
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        roadmap = (ROOT / "docs/application-roadmap.md").read_text(encoding="utf-8")
+        for document in (readme, roadmap):
+            with self.subTest(document=document[:20]):
+                self.assertIn("Gipformer 1.5", document)
+                self.assertIn("vi_VN-vivos-x_low", document)
+                self.assertIn("en_US-amy-low", document)
 
-    def test_silence_is_rejected(self):
-        with self.assertRaises(RuntimeError):
-            normalize_speech_audio(np.zeros(1600, dtype=np.float32))
 
-    def test_edge_no_audio_error_is_reported(self):
-        service = SpeechService()
-        with patch.object(service, "_edge_tts", side_effect=Exception("No audio was received")):
-            with self.assertRaisesRegex(Exception, "No audio was received"):
-                service.synthesize("xin chào", "vi", "edge")
-        service.audio.cleanup()
+if __name__ == "__main__":
+    unittest.main()

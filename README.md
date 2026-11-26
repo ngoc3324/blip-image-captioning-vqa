@@ -8,12 +8,6 @@ Rebuilt from the verified annotation manifest and restored source images.
 python -m pip install -e ".[dev]"
 ```
 
-Install the optional local speech-to-text and online text-to-speech adapters:
-
-```bash
-python -m pip install -e ".[dev,speech]"
-```
-
 ## Validate dataset
 
 ```bash
@@ -23,22 +17,29 @@ python scripts/validate_dataset.py
 ## Run app
 
 ```bash
-python app.py
+python -m streamlit run app.py
 ```
 
-The first voice transcription downloads the `large-v3` Whisper model, which is larger and slower,
-especially on CPU. Short recordings are decoded without VAD so quiet words and pauses are not cut.
-Select the spoken language explicitly when possible; Vietnamese is the UI default and is more
-accurate than automatic detection for short questions. Generated TTS audio is temporary and is
-deleted when the conversation resets or the process exits. Edge TTS requires internet access.
-Alternatively, configure `PIPER_EXECUTABLE`,
-`PIPER_VI_MODEL`, and/or `PIPER_EN_MODEL` before starting the app.
-
-Benchmark a reviewed audio clip close to 10 seconds:
+## Optional speech dependencies
 
 ```bash
-python scripts/benchmark_speech.py path/to/10-second-audio.wav --language vi
+python -m pip install -e ".[speech,dev]"
 ```
+
+Speech to text uses the Vietnamese-specific Gipformer 1.5 68M INT8 model through
+Sherpa-ONNX. Its quantized model files are downloaded from Hugging Face and cached
+locally the first time STT is used; subsequent recognition runs locally. Piper keeps
+the `vi_VN-vivos-x_low` and `en_US-amy-low` voices for Vietnamese and English output.
+Piper voices need their `.onnx` and `.onnx.json` files installed separately; the
+Python package does not include voice weights. Download voice files into `voices/`:
+
+```bash
+python -m piper.download_voices --download-dir voices vi_VN-vivos-x_low en_US-amy-low
+```
+
+The Streamlit app records or uploads audio for Vietnamese transcription and provides
+Piper playback controls. Piper's English catalog currently has no `x_low` voice, so
+English uses the `low` voice.
 
 ## Confidence calibration
 
@@ -65,5 +66,5 @@ The image restore mapping is recorded in `dataset/restoration_manifest.json`.
 
 ## Development roadmap
 
-See [`docs/application-roadmap.md`](docs/application-roadmap.md) for the planned voice assistant,
-confidence/abstention, and lightweight domain fine-tuning milestones.
+See [`docs/application-roadmap.md`](docs/application-roadmap.md) for confidence/abstention and
+lightweight domain fine-tuning milestones.

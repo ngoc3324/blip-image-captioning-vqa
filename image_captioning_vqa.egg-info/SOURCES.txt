@@ -6,6 +6,7 @@ image_captioning_vqa.egg-info/dependency_links.txt
 image_captioning_vqa.egg-info/requires.txt
 image_captioning_vqa.egg-info/top_level.txt
 src/__init__.py
+src/alignment.py
 src/captioner.py
 src/confidence.py
 src/data_loader.py
@@ -13,6 +14,7 @@ src/metrics.py
 src/model_runtime.py
 src/session.py
 src/speech.py
+src/translation.py
 src/vqa.py
 tests/test_confidence.py
 tests/test_data_loader.py

@@ -5,7 +5,8 @@ Requires-Python: >=3.10
 Requires-Dist: Pillow>=10
 Requires-Dist: torch<3,>=2.1
 Requires-Dist: transformers<6,>=4.40
-Requires-Dist: gradio<7,>=4
+Requires-Dist: sentencepiece<1,>=0.2
+Requires-Dist: streamlit<2,>=1.40
 Requires-Dist: numpy<3,>=1.24
 Requires-Dist: sacrebleu<3,>=2.4
 Requires-Dist: rouge-score<1,>=0.1.2
@@ -13,5 +14,8 @@ Requires-Dist: bert-score<1,>=0.3.13
 Provides-Extra: dev
 Requires-Dist: pytest>=8; extra == "dev"
 Provides-Extra: speech
-Requires-Dist: faster-whisper<2,>=1.1; extra == "speech"
-Requires-Dist: edge-tts<8,>=7; extra == "speech"
+Requires-Dist: sherpa-onnx<2,>=1.13; extra == "speech"
+Requires-Dist: sherpa-onnx-core<2,>=1.13; extra == "speech"
+Requires-Dist: huggingface-hub<2,>=0.20; extra == "speech"
+Requires-Dist: av<20,>=14; extra == "speech"
+Requires-Dist: piper-tts<2,>=1; extra == "speech"

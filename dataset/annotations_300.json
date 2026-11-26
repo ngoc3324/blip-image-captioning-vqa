@@ -13,17 +13,17 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "Đồ vật hoặc chủ thể nổi bật trong ảnh là gì?",
           "answer": "lamp"
         },
         {
           "type": "scene",
-          "question": "What kind of scene is shown?",
+          "question": "Ảnh cho thấy khung cảnh nào?",
           "answer": "a living room with a couch and a lamp"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
+          "question": "Trong khung cảnh còn có đồ vật hoặc đặc điểm nào khác?",
           "answer": "a living room with a couch and a lamp"
         }
       ],
@@ -39,17 +39,17 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "Đồ vật hoặc chủ thể nổi bật trong ảnh là gì?",
           "answer": "lamp"
         },
         {
           "type": "scene",
-          "question": "What kind of scene is shown?",
+          "question": "Ảnh cho thấy khung cảnh nào?",
           "answer": "a desk with a laptop and a plant on it"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
+          "question": "Trong khung cảnh còn có đồ vật hoặc đặc điểm nào khác?",
           "answer": "a desk with a laptop and a plant on it"
         }
       ],
@@ -65,17 +65,17 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "Đồ vật hoặc chủ thể nổi bật trong ảnh là gì?",
           "answer": "window"
         },
         {
           "type": "scene",
-          "question": "What kind of scene is shown?",
+          "question": "Ảnh cho thấy khung cảnh nào?",
           "answer": "a living room with a fireplace and couches"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
+          "question": "Trong khung cảnh còn có đồ vật hoặc đặc điểm nào khác?",
           "answer": "a living room with a fireplace and couches"
         }
       ],

@@ -2,35 +2,26 @@
 
 ## Mục tiêu
 
-Phát triển ứng dụng thành trợ lý hình ảnh đa phương thức: người dùng có thể tải ảnh, đặt câu hỏi bằng giọng nói, nghe câu trả lời, nhận cảnh báo khi mô hình không đủ bằng chứng và dùng mô hình đã thích nghi với miền dữ liệu nội thất.
+Phát triển ứng dụng thành trợ lý hình ảnh đa phương thức: người dùng có thể tải ảnh, đặt câu hỏi, nhận cảnh báo khi mô hình không đủ bằng chứng và dùng mô hình đã thích nghi với miền dữ liệu nội thất.
 
 ```text
-Ảnh ───────────────┬─> BLIP Caption ─┬─> Confidence/Abstention ─> Kết quả ─> TTS
+Ảnh ───────────────┬─> BLIP Caption ─┬─> Confidence/Abstention ─> Kết quả
                    └─> BLIP VQA ─────┘
-Microphone ─> STT ─────────────────────> Câu hỏi
 Dataset ─> Chuẩn hóa ─> Fine-tune/LoRA ─> Model Registry ─> Inference
 ```
 
-## Giai đoạn 1 — Speech-to-text và text-to-speech (đã triển khai)
+## Giai đoạn 1 — Giao diện caption và VQA
 
-### Phạm vi
+Giao diện Streamlit đã có thu âm, chuyển giọng nói tiếng Việt thành văn bản và đọc
+câu trả lời. Cài thêm `.[speech]` để có runtime Gipformer/Sherpa-ONNX và Piper.
 
-- Thêm microphone trong tab VQA.
-- Chuyển âm thanh thành văn bản tiếng Việt/Anh; cho phép sửa transcript trước khi gửi.
-- Chuyển caption và câu trả lời thành âm thanh, có tùy chọn tự động đọc.
-- Không lưu audio mặc định sau khi phiên kết thúc.
+### Cấu hình giọng nói hiện tại
 
-### Kỹ thuật đề xuất
-
-- STT local: `faster-whisper` với model `base` hoặc `small`.
-- TTS: `edge-tts` khi có mạng; Piper nếu cần chạy hoàn toàn offline.
-- Đóng gói adapter trong `src/speech.py`; cache model STT thay vì tải lại mỗi lượt.
-
-### Tiêu chí nghiệm thu
-
-- Ghi âm, xem/sửa transcript và gửi câu hỏi trong một luồng.
-- Hỗ trợ tối thiểu `vi` và `en`.
-- Đo latency cho audio 10 giây và hiển thị trạng thái xử lý rõ ràng.
+- Nhận dạng tiếng Việt: Gipformer 1.5 68M INT8 qua Sherpa-ONNX; tải checkpoint ONNX khi dùng lần đầu.
+- Tổng hợp tiếng Việt: Piper voice `vi_VN-vivos-x_low`.
+- Tổng hợp tiếng Anh: Piper voice `en_US-amy-low` (không có voice tiếng Anh x_low trong catalog).
+- Mỗi Piper voice cần cả tệp `.onnx` và `.onnx.json` tương ứng, tải riêng với gói Python.
+- Nhận dạng và tổng hợp chạy cục bộ sau khi đã tải các model cần thiết.
 
 ## Giai đoạn 2 — Confidence và abstention (đã triển khai, chờ duyệt validation)
 
@@ -79,7 +70,6 @@ Tập 300 ảnh khá nhỏ và dễ overfit; ưu tiên LoRA, augmentation hợp 
 
 ```text
 src/
-  speech.py
   confidence.py
   model_registry.py
 training/
@@ -88,7 +78,6 @@ training/
   train_vqa_lora.py
   calibrate_confidence.py
 tests/
-  test_speech.py
   test_confidence.py
   test_abstention.py
 ```
@@ -98,7 +87,6 @@ tests/
 | Mốc | Thời lượng | Bàn giao |
 |---|---:|---|
 | UI và baseline | 2–3 ngày | UI mới, test và benchmark gốc |
-| STT/TTS | 4–6 ngày | Luồng voice, hỗ trợ vi/en |
 | Confidence/abstention | 6–8 ngày | Dataset answerability, calibration, cảnh báo UI |
 | Fine-tune nhẹ | 8–12 ngày | Checkpoint LoRA, báo cáo so sánh, model registry |
 | Kiểm thử và tài liệu | 3–5 ngày | Test hồi quy, hướng dẫn triển khai, demo |
