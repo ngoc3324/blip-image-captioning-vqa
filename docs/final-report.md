@@ -2,7 +2,7 @@
 
 ## Dataset
 
-300 reviewed images, 900 QA pairs, three QA types per image. Images were restored from the referenced Hugging Face archive using source archive entry order; see `dataset/restoration_manifest.json`.
+100 reviewed images, 300 QA pairs, three QA types per image. Reference answers are intentionally short: object labels, scene categories, and compact visible-object lists. Images were restored from the referenced Hugging Face archive using source archive entry order; see `dataset/restoration_manifest.json`.
 
 ## Models
 
@@ -11,4 +11,4 @@
 
 ## Evaluation
 
-Run the benchmark and evaluator to populate BLEU, ROUGE-L, BERTScore, VQA exact match/token F1, latency, and error categories. Because image selection order was recovered from archive order, visually spot-check the mapping before final submission.
+The JSON manifest is independent ground truth, not an answer lookup used by the application. `run_decode_benchmark.py` sends its images and questions to BLIP and records predictions; `evaluate_predictions.py` then compares those predictions with the manifest to calculate BLEU, ROUGE-L, BERTScore, VQA exact match/token F1, and latency. Because image selection order was recovered from archive order, visually spot-check every normalized reference before final submission.

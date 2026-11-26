@@ -52,7 +52,7 @@ class SpeechPackagingTests(unittest.TestCase):
         for document in (readme, roadmap):
             with self.subTest(document=document[:20]):
                 self.assertIn("Gipformer 1.5", document)
-                self.assertIn("vi_VN-vivos-x_low", document)
+                self.assertIn("vi_VN-vais1000-medium", document)
                 self.assertIn("en_US-amy-low", document)
 
 

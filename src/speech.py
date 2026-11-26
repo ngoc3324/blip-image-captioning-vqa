@@ -20,7 +20,8 @@ import wave
 
 
 VOICE_NAMES = {
-    "vi": "vi_VN-vivos-x_low",
+    # VAIS-1000 is a studio-recorded female Northern Vietnamese voice.
+    "vi": "vi_VN-vais1000-medium",
     # The official Piper catalog currently has no English x_low voice.
     "en": "en_US-amy-low",
 }

@@ -28,13 +28,14 @@ python -m pip install -e ".[speech,dev]"
 
 Speech to text uses the Vietnamese-specific Gipformer 1.5 68M INT8 model through
 Sherpa-ONNX. Its quantized model files are downloaded from Hugging Face and cached
-locally the first time STT is used; subsequent recognition runs locally. Piper keeps
-the `vi_VN-vivos-x_low` and `en_US-amy-low` voices for Vietnamese and English output.
+locally the first time STT is used; subsequent recognition runs locally. Piper uses
+the medium-quality Northern Vietnamese female voice `vi_VN-vais1000-medium` and the
+`en_US-amy-low` voice for English output.
 Piper voices need their `.onnx` and `.onnx.json` files installed separately; the
 Python package does not include voice weights. Download voice files into `voices/`:
 
 ```bash
-python -m piper.download_voices --download-dir voices vi_VN-vivos-x_low en_US-amy-low
+python -m piper.download_voices --download-dir voices vi_VN-vais1000-medium en_US-amy-low
 ```
 
 The Streamlit app records or uploads audio for Vietnamese transcription and provides
@@ -56,7 +57,15 @@ file exists, the UI labels confidence thresholds as experimental and does not sh
 
 ## Benchmark/evaluation
 
+`dataset/annotations_300.json` contains the independent reference answers: 100
+images and 300 short QA pairs. The application does not look up these answers
+when answering a user. Instead, the benchmark sends each image and question to
+BLIP, stores its predictions, and the evaluator compares those predictions with
+the JSON references. Keep the references human-reviewed; copying BLIP answers
+into the manifest would make the evaluation circular.
+
 ```bash
+python scripts/normalize_vqa_references.py
 python scripts/run_decode_benchmark.py --limit 2 --repeats 1
 python scripts/evaluate_predictions.py artifacts/predictions.jsonl
 python scripts/build_error_report.py artifacts/predictions.jsonl

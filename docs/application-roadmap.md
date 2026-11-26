@@ -18,7 +18,7 @@ câu trả lời. Cài thêm `.[speech]` để có runtime Gipformer/Sherpa-ONNX
 ### Cấu hình giọng nói hiện tại
 
 - Nhận dạng tiếng Việt: Gipformer 1.5 68M INT8 qua Sherpa-ONNX; tải checkpoint ONNX khi dùng lần đầu.
-- Tổng hợp tiếng Việt: Piper voice `vi_VN-vivos-x_low`.
+- Tổng hợp tiếng Việt: Piper voice nữ miền Bắc `vi_VN-vais1000-medium`.
 - Tổng hợp tiếng Anh: Piper voice `en_US-amy-low` (không có voice tiếng Anh x_low trong catalog).
 - Mỗi Piper voice cần cả tệp `.onnx` và `.onnx.json` tương ứng, tải riêng với gói Python.
 - Nhận dạng và tổng hợp chạy cục bộ sau khi đã tải các model cần thiết.

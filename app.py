@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import io
+import re
 import time
 from dataclasses import replace
 
@@ -65,6 +66,15 @@ hr { border-color:#e1e6de; }
 st.markdown(APP_CSS, unsafe_allow_html=True)
 
 
+_LEGACY_REVIEW_NOTE = re.compile(
+    r"\n{2}\*Câu (?:mô tả|trả lời)[^*]*?(?:đối chiếu|kiểm tra)[^*]*?ảnh\.\*"
+)
+
+
+def _remove_legacy_review_note(text: str) -> str:
+    return _LEGACY_REVIEW_NOTE.sub("", text)
+
+
 @st.cache_resource(show_spinner="Đang nạp mô hình caption…")
 def get_captioner() -> BlipCaptioner:
     return BlipCaptioner()
@@ -100,6 +110,9 @@ def _init_state() -> None:
     for name, value in defaults.items():
         if name not in st.session_state:
             st.session_state[name] = value
+    for message in st.session_state.messages:
+        message["content"] = _remove_legacy_review_note(message["content"])
+    st.session_state.last_response = _remove_legacy_review_note(st.session_state.last_response)
 
 
 def _generation_config(
@@ -164,7 +177,7 @@ with st.sidebar:
             st.markdown(
                 """
                 **Ảnh và hỏi đáp**  
-                Tải ảnh, tạo mô tả hoặc nhập câu hỏi tiếng Việt ở khung hội thoại.
+                Tải ảnh, tạo mô tả hoặc nhập câu hỏi tiếng Anh ở khung hội thoại.
 
                 **Nhận dạng giọng nói**  
                 Mở app bằng `http://localhost:8501`. Nếu micro bị chặn, mở quyền trang web ở bên trái thanh địa chỉ, chọn **Microphone → Cho phép**, rồi tải lại trang.
@@ -270,7 +283,7 @@ with st.sidebar:
     )
     st.markdown("---")
     st.markdown("### 04 · Giọng đọc câu trả lời · TTS")
-    speech_language = st.selectbox("Ngôn ngữ giọng đọc TTS", [("Tiếng Việt", "vi"), ("English", "en")], format_func=lambda option: option[0], index=0)
+    speech_language = st.selectbox("Ngôn ngữ giọng đọc TTS", [("Tiếng Việt · giọng nữ miền Bắc", "vi"), ("English", "en")], format_func=lambda option: option[0], index=0)
     voice_code = speech_language[1]
     auto_speak = st.checkbox("Tự đọc câu trả lời", value=False)
     if st.button("Đọc câu trả lời gần nhất", use_container_width=True, disabled=not st.session_state.last_response):
@@ -282,8 +295,8 @@ with st.sidebar:
 st.markdown(
     '<header class="masthead"><div><div class="eyebrow">Thị Giác · phòng thí nghiệm hình ảnh</div>'
     '<h1>Nhìn kỹ hơn. Hỏi tự nhiên hơn.</h1>'
-    '<p>Tạo mô tả, đặt câu hỏi tiếng Việt về nội dung trong ảnh và theo dõi câu trả lời trong cùng một cuộc hội thoại.</p>'
-    '</div><div class="status-chip">BLIP · TIẾNG VIỆT</div></header>',
+    '<p>Tạo mô tả, đặt câu hỏi tiếng Anh về nội dung trong ảnh và theo dõi câu trả lời trong cùng một cuộc hội thoại.</p>'
+    '</div><div class="status-chip">BLIP · ENGLISH VQA</div></header>',
     unsafe_allow_html=True,
 )
 
@@ -300,8 +313,6 @@ if caption_button and image is not None:
             display = result.text
             if decision and decision.should_abstain:
                 display = "Tôi chưa thể tạo mô tả đủ tin cậy từ ảnh này."
-            elif decision and decision.level == "review":
-                display += "\n\n*Câu mô tả này nên được đối chiếu thêm với ảnh.*"
             _append_assistant(f"**Mô tả ảnh**\n\n{display}", "caption")
             st.session_state.last_response = display
             st.session_state.last_audio = None
@@ -318,7 +329,7 @@ if use_transcript:
 
 pending_prompt = st.session_state.pending_question
 st.session_state.pending_question = ""
-typed_prompt = st.chat_input("Hỏi bằng tiếng Việt về đồ vật, màu sắc, vị trí hoặc hành động…", disabled=image is None)
+typed_prompt = st.chat_input("Ask in English about objects, colors, positions, or actions…", disabled=image is None)
 prompt = pending_prompt or typed_prompt
 
 if prompt:
@@ -335,8 +346,6 @@ if prompt:
                 display = result.text
                 if decision and decision.should_abstain:
                     display = "Tôi chưa thể xác định điều này từ ảnh với đủ bằng chứng."
-                elif decision and decision.level == "review":
-                    display += "\n\n*Câu trả lời nên được kiểm tra lại trên ảnh.*"
                 _append_assistant(display)
                 st.session_state.last_audio = None
                 st.session_state.last_decision = decision
@@ -363,7 +372,7 @@ with left:
         st.markdown(
             '<section class="welcome-panel"><div class="welcome-mark">01</div>'
             '<h2>Ảnh đã sẵn sàng</h2>'
-            '<p>Tạo mô tả hoặc đặt câu hỏi trong khung hội thoại.</p>'
+            '<p>Tạo mô tả hoặc đặt câu hỏi bằng tiếng Anh trong khung hội thoại.</p>'
             '</section>',
             unsafe_allow_html=True,
         )

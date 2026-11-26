@@ -14,7 +14,6 @@ src/metrics.py
 src/model_runtime.py
 src/session.py
 src/speech.py
-src/translation.py
 src/vqa.py
 tests/test_confidence.py
 tests/test_data_loader.py

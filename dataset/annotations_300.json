@@ -2,7 +2,7 @@
   "source": "restored_image_folder_and_blip_caption",
   "count": 100,
   "annotation_status": "reviewed",
-  "annotation_notes": "Annotations retained for image IDs 0001-0100 and marked reviewed.",
+  "annotation_notes": "100 images and 300 short VQA references. Object answers use source labels; scene and visual-detail answers are normalized from reviewed captions. BLIP predictions are kept separate for unbiased evaluation.",
   "items": [
     {
       "image_id": "0001",
@@ -13,22 +13,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "Đồ vật hoặc chủ thể nổi bật trong ảnh là gì?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
-          "question": "Ảnh cho thấy khung cảnh nào?",
-          "answer": "a living room with a couch and a lamp"
+          "question": "What kind of scene is shown?",
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "Trong khung cảnh còn có đồ vật hoặc đặc điểm nào khác?",
-          "answer": "a living room with a couch and a lamp"
+          "question": "What other objects are visible?",
+          "answer": "couch and lamp"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0002",
@@ -39,22 +39,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "Đồ vật hoặc chủ thể nổi bật trong ảnh là gì?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
-          "question": "Ảnh cho thấy khung cảnh nào?",
-          "answer": "a desk with a laptop and a plant on it"
+          "question": "What kind of scene is shown?",
+          "answer": "workspace"
         },
         {
           "type": "visual_detail",
-          "question": "Trong khung cảnh còn có đồ vật hoặc đặc điểm nào khác?",
-          "answer": "a desk with a laptop and a plant on it"
+          "question": "What other objects are visible?",
+          "answer": "desk, laptop and plant"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0003",
@@ -65,22 +65,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "Đồ vật hoặc chủ thể nổi bật trong ảnh là gì?",
+          "question": "What is a prominent object?",
           "answer": "window"
         },
         {
           "type": "scene",
-          "question": "Ảnh cho thấy khung cảnh nào?",
-          "answer": "a living room with a fireplace and couches"
+          "question": "What kind of scene is shown?",
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "Trong khung cảnh còn có đồ vật hoặc đặc điểm nào khác?",
-          "answer": "a living room with a fireplace and couches"
+          "question": "What other objects are visible?",
+          "answer": "fireplace and couches"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0004",
@@ -91,22 +91,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with white walls and a green velvet sofa"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with white walls and a green velvet sofa"
+          "question": "What other objects are visible?",
+          "answer": "couch"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0005",
@@ -117,22 +117,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "wardrobe"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with lots of furniture and plants"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with lots of furniture and plants"
+          "question": "What other objects are visible?",
+          "answer": "furniture and plants"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0006",
@@ -143,22 +143,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "wardrobe"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a red couch and a desk"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a red couch and a desk"
+          "question": "What other objects are visible?",
+          "answer": "couch and desk"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0007",
@@ -169,22 +169,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "wardrobe"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a bedroom with black walls and a large bed"
+          "answer": "bedroom"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a bedroom with black walls and a large bed"
+          "question": "What other objects are visible?",
+          "answer": "bed"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0008",
@@ -195,22 +195,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room filled with furniture and a ceiling fan"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room filled with furniture and a ceiling fan"
+          "question": "What other objects are visible?",
+          "answer": "furniture and ceiling fan"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0009",
@@ -221,22 +221,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "wardrobe"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a television and a plant"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a television and a plant"
+          "question": "What other objects are visible?",
+          "answer": "television and plant"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0010",
@@ -247,22 +247,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a bedroom with a large bed and a couch"
+          "answer": "bedroom"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a bedroom with a large bed and a couch"
+          "question": "What other objects are visible?",
+          "answer": "bed and couch"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0011",
@@ -273,22 +273,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "window"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a couch sitting in front of a window"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a couch sitting in front of a window"
+          "question": "What other objects are visible?",
+          "answer": "couch and window"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0012",
@@ -299,22 +299,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "window"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a wooden floor and a large window"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a wooden floor and a large window"
+          "question": "What other objects are visible?",
+          "answer": "window"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0013",
@@ -325,22 +325,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a fireplace and a couch"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a fireplace and a couch"
+          "question": "What other objects are visible?",
+          "answer": "fireplace and couch"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0014",
@@ -351,22 +351,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with red leather chairs and a fireplace"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with red leather chairs and a fireplace"
+          "question": "What other objects are visible?",
+          "answer": "chairs and fireplace"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0015",
@@ -377,22 +377,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room filled with furniture and a fire place"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room filled with furniture and a fire place"
+          "question": "What other objects are visible?",
+          "answer": "furniture and fireplace"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0016",
@@ -403,22 +403,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "wardrobe"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a desk with a computer and a plant on it"
+          "answer": "workspace"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a desk with a computer and a plant on it"
+          "question": "What other objects are visible?",
+          "answer": "desk, computer and plant"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0017",
@@ -429,22 +429,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a view of the city"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a view of the city"
+          "question": "What other objects are visible?",
+          "answer": "furniture"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0018",
@@ -455,22 +455,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a dining room with a table and chairs"
+          "answer": "dining room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a dining room with a table and chairs"
+          "question": "What other objects are visible?",
+          "answer": "table and chairs"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0019",
@@ -481,22 +481,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a dining room with a wooden table and chairs"
+          "answer": "dining room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a dining room with a wooden table and chairs"
+          "question": "What other objects are visible?",
+          "answer": "table and chairs"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0020",
@@ -507,22 +507,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "wardrobe"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a bedroom with orange walls and a white bed"
+          "answer": "bedroom"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a bedroom with orange walls and a white bed"
+          "question": "What other objects are visible?",
+          "answer": "bed"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0021",
@@ -533,22 +533,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a kitchen with white cabinets and a large island"
+          "answer": "kitchen"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a kitchen with white cabinets and a large island"
+          "question": "What other objects are visible?",
+          "answer": "cabinets and island"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0022",
@@ -559,22 +559,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a bedroom with a bed and a sliding glass door"
+          "answer": "bedroom"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a bedroom with a bed and a sliding glass door"
+          "question": "What other objects are visible?",
+          "answer": "bed and sliding door"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0023",
@@ -585,22 +585,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room filled with furniture and a flat screen tv"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room filled with furniture and a flat screen tv"
+          "question": "What other objects are visible?",
+          "answer": "furniture and television"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0024",
@@ -611,22 +611,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "wardrobe"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a room with a shelf and a plant on the floor"
+          "answer": "room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a room with a shelf and a plant on the floor"
+          "question": "What other objects are visible?",
+          "answer": "shelf and plant"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0025",
@@ -637,22 +637,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "window"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a white couch and a coffee table"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a white couch and a coffee table"
+          "question": "What other objects are visible?",
+          "answer": "couch and coffee table"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0026",
@@ -663,22 +663,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "photo frame"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a white couch with pillows and two framed pictures on the wall"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a white couch with pillows and two framed pictures on the wall"
+          "question": "What other objects are visible?",
+          "answer": "couch, pillows and framed pictures"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0027",
@@ -689,22 +689,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a large stone fireplace"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a large stone fireplace"
+          "question": "What other objects are visible?",
+          "answer": "fireplace"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0028",
@@ -715,22 +715,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room filled with furniture and a painting on the wall"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room filled with furniture and a painting on the wall"
+          "question": "What other objects are visible?",
+          "answer": "furniture and pictures"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0029",
@@ -741,22 +741,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room filled with lots of books"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room filled with lots of books"
+          "question": "What other objects are visible?",
+          "answer": "books"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0030",
@@ -767,22 +767,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "door"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room filled with furniture and a fire place"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room filled with furniture and a fire place"
+          "question": "What other objects are visible?",
+          "answer": "furniture and fireplace"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0031",
@@ -793,22 +793,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a woman sitting on a couch in a living room"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a woman sitting on a couch in a living room"
+          "question": "What other objects are visible?",
+          "answer": "couch"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0032",
@@ -819,22 +819,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "window"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a couch a table and chairs"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a couch a table and chairs"
+          "question": "What other objects are visible?",
+          "answer": "couch, table and chairs"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0033",
@@ -845,22 +845,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "photo frame"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a chair, shelves and plants on the wall"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a chair, shelves and plants on the wall"
+          "question": "What other objects are visible?",
+          "answer": "chair and plants"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0034",
@@ -871,22 +871,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "photo frame"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with pictures on the wall"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with pictures on the wall"
+          "question": "What other objects are visible?",
+          "answer": "pictures"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0035",
@@ -897,22 +897,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a room filled with lots of old furniture"
+          "answer": "room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a room filled with lots of old furniture"
+          "question": "What other objects are visible?",
+          "answer": "furniture"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0036",
@@ -923,22 +923,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "door"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a room with a white curtain and a pot of plants"
+          "answer": "room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a room with a white curtain and a pot of plants"
+          "question": "What other objects are visible?",
+          "answer": "curtain and plants"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0037",
@@ -949,22 +949,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "wardrobe"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a bed in a room with a round window"
+          "answer": "bedroom"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a bed in a room with a round window"
+          "question": "What other objects are visible?",
+          "answer": "bed and window"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0038",
@@ -975,22 +975,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "wardrobe"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a couch and a coffee table"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a couch and a coffee table"
+          "question": "What other objects are visible?",
+          "answer": "couch and coffee table"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0039",
@@ -1001,22 +1001,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a blue couch and a coffee table"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a blue couch and a coffee table"
+          "question": "What other objects are visible?",
+          "answer": "couch and coffee table"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0040",
@@ -1027,22 +1027,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "window"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a porch decorated for halloween with pumpkins and lights"
+          "answer": "porch"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a porch decorated for halloween with pumpkins and lights"
+          "question": "What other objects are visible?",
+          "answer": "pumpkins and lights"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0041",
@@ -1053,22 +1053,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room filled with furniture and a large window"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room filled with furniture and a large window"
+          "question": "What other objects are visible?",
+          "answer": "furniture and window"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0042",
@@ -1079,22 +1079,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room filled with furniture and a fireplace"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room filled with furniture and a fireplace"
+          "question": "What other objects are visible?",
+          "answer": "furniture and fireplace"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0043",
@@ -1105,22 +1105,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a woman standing in a room with a television"
+          "answer": "room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a woman standing in a room with a television"
+          "question": "What other objects are visible?",
+          "answer": "television"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0044",
@@ -1131,22 +1131,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a couch and a fireplace"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a couch and a fireplace"
+          "question": "What other objects are visible?",
+          "answer": "couch and fireplace"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0045",
@@ -1157,22 +1157,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a room with a table and chairs in it"
+          "answer": "dining room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a room with a table and chairs in it"
+          "question": "What other objects are visible?",
+          "answer": "table and chairs"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0046",
@@ -1183,22 +1183,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "wardrobe"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a yellow chair sitting in front of a gray wall"
+          "answer": "room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a yellow chair sitting in front of a gray wall"
+          "question": "What other objects are visible?",
+          "answer": "chair"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0047",
@@ -1209,22 +1209,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room filled with furniture and a large window"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room filled with furniture and a large window"
+          "question": "What other objects are visible?",
+          "answer": "furniture and window"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0048",
@@ -1235,22 +1235,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "wardrobe"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a couch and a television"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a couch and a television"
+          "question": "What other objects are visible?",
+          "answer": "couch and television"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0049",
@@ -1261,22 +1261,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "wardrobe"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a kitchen with white cabinets and wood floors"
+          "answer": "kitchen"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a kitchen with white cabinets and wood floors"
+          "question": "What other objects are visible?",
+          "answer": "cabinets"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0050",
@@ -1287,22 +1287,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room filled with furniture and a stone fireplace"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room filled with furniture and a stone fireplace"
+          "question": "What other objects are visible?",
+          "answer": "furniture and fireplace"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0051",
@@ -1313,22 +1313,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "window"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a gray couch with pillows and a round mirror on it"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a gray couch with pillows and a round mirror on it"
+          "question": "What other objects are visible?",
+          "answer": "couch, pillows and mirror"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0052",
@@ -1339,22 +1339,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a bedroom with a bed and a bench"
+          "answer": "bedroom"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a bedroom with a bed and a bench"
+          "question": "What other objects are visible?",
+          "answer": "bed and bench"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0053",
@@ -1365,22 +1365,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a white couch and a coffee table"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a white couch and a coffee table"
+          "question": "What other objects are visible?",
+          "answer": "couch and coffee table"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0054",
@@ -1391,22 +1391,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a bedroom with a large bed and a large window"
+          "answer": "bedroom"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a bedroom with a large bed and a large window"
+          "question": "What other objects are visible?",
+          "answer": "bed and window"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0055",
@@ -1417,22 +1417,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with two yellow chairs and a staircase"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with two yellow chairs and a staircase"
+          "question": "What other objects are visible?",
+          "answer": "chairs and staircase"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0056",
@@ -1443,22 +1443,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "photo frame"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with gray couches and a white coffee table"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with gray couches and a white coffee table"
+          "question": "What other objects are visible?",
+          "answer": "couches and coffee table"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0057",
@@ -1469,22 +1469,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a sideboard with a plant on top of it"
+          "answer": "room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a sideboard with a plant on top of it"
+          "question": "What other objects are visible?",
+          "answer": "sideboard and plant"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0058",
@@ -1495,22 +1495,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room filled with furniture and a fire place"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room filled with furniture and a fire place"
+          "question": "What other objects are visible?",
+          "answer": "furniture and fireplace"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0059",
@@ -1521,22 +1521,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "wardrobe"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a couch, coffee table, and fireplace"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a couch, coffee table, and fireplace"
+          "question": "What other objects are visible?",
+          "answer": "couch, coffee table and fireplace"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0060",
@@ -1547,22 +1547,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a couch, a coffee table, and a tv"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a couch, a coffee table, and a tv"
+          "question": "What other objects are visible?",
+          "answer": "couch, coffee table and television"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0061",
@@ -1573,22 +1573,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a yellow chair and a tv on the wall"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a yellow chair and a tv on the wall"
+          "question": "What other objects are visible?",
+          "answer": "chair and television"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0062",
@@ -1599,22 +1599,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a couch and a television"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a couch and a television"
+          "question": "What other objects are visible?",
+          "answer": "couch and television"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0063",
@@ -1625,22 +1625,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "wardrobe"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a couch and a television on the wall"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a couch and a television on the wall"
+          "question": "What other objects are visible?",
+          "answer": "couch and television"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0064",
@@ -1651,22 +1651,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "wardrobe"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a blue chair and a wooden cabinet in a white room"
+          "answer": "room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a blue chair and a wooden cabinet in a white room"
+          "question": "What other objects are visible?",
+          "answer": "chair and cabinet"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0065",
@@ -1677,22 +1677,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with red and white striped walls"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with red and white striped walls"
+          "question": "What other objects are visible?",
+          "answer": "furniture"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0066",
@@ -1703,22 +1703,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "window"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a bedroom with a bed, nightstand, and mirror"
+          "answer": "bedroom"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a bedroom with a bed, nightstand, and mirror"
+          "question": "What other objects are visible?",
+          "answer": "bed, nightstand and mirror"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0067",
@@ -1729,22 +1729,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a bedroom with a white bed and a white blanket"
+          "answer": "bedroom"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a bedroom with a white bed and a white blanket"
+          "question": "What other objects are visible?",
+          "answer": "bed"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0068",
@@ -1755,22 +1755,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a yellow couch and a blue coffee table"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a yellow couch and a blue coffee table"
+          "question": "What other objects are visible?",
+          "answer": "couch and coffee table"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0069",
@@ -1781,22 +1781,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a bedroom with white walls and wooden floors"
+          "answer": "bedroom"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a bedroom with white walls and wooden floors"
+          "question": "What other objects are visible?",
+          "answer": "bed"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0070",
@@ -1807,22 +1807,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "wardrobe"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a plant in a pot on a wooden floor"
+          "answer": "room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a plant in a pot on a wooden floor"
+          "question": "What other objects are visible?",
+          "answer": "plant"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0071",
@@ -1833,22 +1833,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "photo frame"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a man sitting on a couch with a cigarette in his mouth"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a man sitting on a couch with a cigarette in his mouth"
+          "question": "What other objects are visible?",
+          "answer": "couch"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0072",
@@ -1859,22 +1859,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a large arched window"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a large arched window"
+          "question": "What other objects are visible?",
+          "answer": "window"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0073",
@@ -1885,22 +1885,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a couch, coffee table, and large windows"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a couch, coffee table, and large windows"
+          "question": "What other objects are visible?",
+          "answer": "couch, coffee table and windows"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0074",
@@ -1911,22 +1911,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a room with a bunch of art hanging on the wall"
+          "answer": "room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a room with a bunch of art hanging on the wall"
+          "question": "What other objects are visible?",
+          "answer": "pictures"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0075",
@@ -1937,22 +1937,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "photo frame"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a staircase leading up to the second floor"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a staircase leading up to the second floor"
+          "question": "What other objects are visible?",
+          "answer": "staircase"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0076",
@@ -1963,22 +1963,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a bedroom with white walls and wooden floors"
+          "answer": "bedroom"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a bedroom with white walls and wooden floors"
+          "question": "What other objects are visible?",
+          "answer": "bed"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0077",
@@ -1989,22 +1989,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with white walls and a white couch"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with white walls and a white couch"
+          "question": "What other objects are visible?",
+          "answer": "couch"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0078",
@@ -2015,22 +2015,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a white couch and pink chairs"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a white couch and pink chairs"
+          "question": "What other objects are visible?",
+          "answer": "couch and chairs"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0079",
@@ -2041,22 +2041,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a couch and a tv on the wall"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a couch and a tv on the wall"
+          "question": "What other objects are visible?",
+          "answer": "couch and television"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0080",
@@ -2067,22 +2067,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "wardrobe"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a modern living room with a large tv on the wall"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a modern living room with a large tv on the wall"
+          "question": "What other objects are visible?",
+          "answer": "television"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0081",
@@ -2093,22 +2093,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a green couch and a flat screen tv"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a green couch and a flat screen tv"
+          "question": "What other objects are visible?",
+          "answer": "couch and television"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0082",
@@ -2119,22 +2119,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room filled with furniture and a flat screen tv"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room filled with furniture and a flat screen tv"
+          "question": "What other objects are visible?",
+          "answer": "furniture and television"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0083",
@@ -2145,22 +2145,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a black couch and some plants"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a black couch and some plants"
+          "question": "What other objects are visible?",
+          "answer": "couch and plants"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0084",
@@ -2171,22 +2171,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "door"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a plant sitting on top of a suitcase"
+          "answer": "room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a plant sitting on top of a suitcase"
+          "question": "What other objects are visible?",
+          "answer": "plant and suitcase"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0085",
@@ -2197,22 +2197,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "photo frame"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a wooden table with a bowl of flowers on it"
+          "answer": "room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a wooden table with a bowl of flowers on it"
+          "question": "What other objects are visible?",
+          "answer": "table, bowl and flowers"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0086",
@@ -2223,22 +2223,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a white chair sitting in front of a window"
+          "answer": "room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a white chair sitting in front of a window"
+          "question": "What other objects are visible?",
+          "answer": "chair and window"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0087",
@@ -2249,22 +2249,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a couch, chair and coffee table"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a couch, chair and coffee table"
+          "question": "What other objects are visible?",
+          "answer": "couch, chair and coffee table"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0088",
@@ -2275,22 +2275,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a couch and a coffee table"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a couch and a coffee table"
+          "question": "What other objects are visible?",
+          "answer": "couch and coffee table"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0089",
@@ -2301,22 +2301,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a bedroom with a bed and a fireplace"
+          "answer": "bedroom"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a bedroom with a bed and a fireplace"
+          "question": "What other objects are visible?",
+          "answer": "bed and fireplace"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0090",
@@ -2327,22 +2327,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a dining room with a table and chairs"
+          "answer": "dining room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a dining room with a table and chairs"
+          "question": "What other objects are visible?",
+          "answer": "table and chairs"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0091",
@@ -2353,22 +2353,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "door"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a room with a desk, bookshel and a chair"
+          "answer": "workspace"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a room with a desk, bookshel and a chair"
+          "question": "What other objects are visible?",
+          "answer": "desk, bookshelf and chair"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0092",
@@ -2379,22 +2379,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "window"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a patio with white furniture and red pillows"
+          "answer": "patio"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a patio with white furniture and red pillows"
+          "question": "What other objects are visible?",
+          "answer": "furniture and pillows"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0093",
@@ -2405,22 +2405,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "window"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a kitchen and dining area in a loft apartment"
+          "answer": "kitchen and dining area"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a kitchen and dining area in a loft apartment"
+          "question": "What other objects are visible?",
+          "answer": "furniture"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0094",
@@ -2431,22 +2431,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a couch and a coffee table"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a couch and a coffee table"
+          "question": "What other objects are visible?",
+          "answer": "couch and coffee table"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0095",
@@ -2457,22 +2457,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room with a couch and a coffee table"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room with a couch and a coffee table"
+          "question": "What other objects are visible?",
+          "answer": "couch and coffee table"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0096",
@@ -2483,22 +2483,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room filled with furniture and a stone fireplace"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room filled with furniture and a stone fireplace"
+          "question": "What other objects are visible?",
+          "answer": "furniture and fireplace"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0097",
@@ -2509,22 +2509,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "door"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a room with a staircase and a painting on the wall"
+          "answer": "room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a room with a staircase and a painting on the wall"
+          "question": "What other objects are visible?",
+          "answer": "staircase and pictures"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0098",
@@ -2535,22 +2535,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "window"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a room with a wooden table and chairs"
+          "answer": "dining room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a room with a wooden table and chairs"
+          "question": "What other objects are visible?",
+          "answer": "table and chairs"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0099",
@@ -2561,22 +2561,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a living room filled with furniture and a chandel"
+          "answer": "living room"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a living room filled with furniture and a chandel"
+          "question": "What other objects are visible?",
+          "answer": "furniture and chandelier"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     },
     {
       "image_id": "0100",
@@ -2587,22 +2587,22 @@
       "qa_pairs": [
         {
           "type": "object",
-          "question": "What is a prominent object or subject in the image?",
+          "question": "What is a prominent object?",
           "answer": "lamp"
         },
         {
           "type": "scene",
           "question": "What kind of scene is shown?",
-          "answer": "a large open office space with lots of desks and chairs"
+          "answer": "office"
         },
         {
           "type": "visual_detail",
-          "question": "What other visible object or feature appears in the scene?",
-          "answer": "a large open office space with lots of desks and chairs"
+          "question": "What other objects are visible?",
+          "answer": "desks and chairs"
         }
       ],
       "status": "reviewed",
-      "annotation_note": "Annotation reviewed."
+      "annotation_note": "Short VQA references normalized from the source label and reviewed caption."
     }
   ]
 }
